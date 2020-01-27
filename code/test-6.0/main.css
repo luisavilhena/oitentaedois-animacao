@@ -1,0 +1,52 @@
+/*baseado no https://codepen.io/sbuellet/pen/gVojwJ*/
+/*https://bennettfeely.com/image-effects/*/
+body {
+  margin: 0;
+
+}
+.hallucination-effect {
+  background-image: url("../../resources/site_oed_imagens/site_oed_05.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 500px;
+  height: 500px;
+}
+@supports (mix-blend-mode: multiply) {
+  .hallucination-effect {
+    position: relative;
+    overflow: hidden;
+    background-color: magenta;
+    background-blend-mode: screen;
+  }
+  .hallucination-effect:before, .hallucination-effect:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:  url("../../resources/site_oed_imagens/site_oed_05.jpg");
+    mix-blend-mode: multiply;
+    animation: transform 10s infinite alternate;
+  }
+  .hallucination-effect:before {
+    background-color: yellow;
+    background-blend-mode: screen;
+    transform-origin: top left;
+  }
+  .hallucination-effect:after {
+    background-color: cyan;
+    background-blend-mode: screen;
+    transform-origin: bottom right;
+  }
+}
+
+@keyframes transform { 
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2); 
+  } 
+}

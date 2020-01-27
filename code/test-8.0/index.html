@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teste 8</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.0/gsap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <svg width="550" height="550" viewBox="0 0 550 550" xmlns="http://www.w3.org/2000/svg">  
+    
+ <!--  <g id="character" >
+    <line id="body"  x1="25" y1="69" x2="25" y2="25"/>
+  </g> -->
+<!--       <circle class="spirit"  cx="280" cy="240" r="160" /> -->
+    
+
+<!--     <g id="eyes">
+    <circle  cx="15" cy="27.5" r="1"/>
+    <circle   cx="35" cy="27.5" r="1" /> 
+   </g> -->
+   <image xlink:href="../../resources/site_oed_imagens/site_oed_02.jpg" x="0" y="0" width="100%" height="100%" filter="url(#grain)";>
+   </image>
+    <defs>
+      <filter style="color-interpolation-filters:sRGB;" id="grain">
+        <feTurbulence id="turb" type="fractalNoise" numOctaves="15" baseFrequency="0.001" seed="6" result="turb" />
+        
+        
+        <feComposite in="SourceGraphic" in2="light" result="comp" operator="arithmetic" k1="1.7" id="feComposite4170" />
+         <feGaussianBlur in="comp" stdDeviation="5" id="blur" />
+
+  <feDisplacementMap in2="turb" in="blur"
+          scale="100" xChannelSelector="R" yChannelSelector="G"/>
+         
+      </filter>
+      
+    </defs>  
+
+  </svg>
+</body>
+</html>

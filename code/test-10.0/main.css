@@ -1,0 +1,34 @@
+/*https://codepen.io/noahblon/pen/GKflw*/
+
+body {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+img {
+  margin-left: 46.5px;
+  align-self: stretch;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100vh;
+  height: 600px;
+  animation: height 3s infinite alternate;
+}
+.imagem {
+/*  z-index: 9;*/
+  top: 0;
+  position: absolute;
+  background-image: url("../../resources/site_oed_imagens/site_oed_01.jpg");
+  background-size: cover;
+  width: 100vh;
+  height: 600px;
+}
+
+@keyframes height { 
+  from {
+    height: 200px;
+  }
+  to {
+    height:1300px; 
+  } 
+}

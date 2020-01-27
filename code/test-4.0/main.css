@@ -1,0 +1,32 @@
+/*https://codepen.io/SaraSoueidan/embed/148b441363a320d4b46cb5ff835525ef?height=542&theme-id=light&slug-hash=148b441363a320d4b46cb5ff835525ef&default-tab=result&animations=run&editable=&embed-version=2&user=SaraSoueidan&name=cp_embed_1#result-box*/
+body {
+  padding: 5vw;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: #212121;
+  color: #fff;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+}
+
+input[type="range"]{
+  max-width: 300px;
+}
+
+#value {
+  font-size: 1.1em;
+  margin-left: .5em;
+}
+
+label {
+  font-size: 1.5em;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.wrapper {
+  max-width: 80%;
+}

@@ -1,0 +1,28 @@
+/*baseado no https://tympanus.net/codrops/2019/02/19/svg-filter-effects-creating-texture-with-feturbulence/*/
+body {
+  margin: 0;
+}
+#image-1 img {
+  width: 100%;
+  height: auto;
+}
+#image-3 img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+svg {
+  z-index: 10;
+  width: 100vh;
+  height: auto;
+}
+
+#image-2 {
+/*  background-color: #6ae444;*/
+  z-index: 999;
+  margin-top: -50px;
+}
+.imagem-repetida {
+  width: 100vh;
+  height: auto;
+}
